@@ -22,12 +22,23 @@
     "lib": [
       "ES2022",
       "dom"
+    ],
+    "plugins": [
+      {
+        "name": "@angular/language-service"
+      }
     ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "_enabledBlockTypes": [
+      "if",
+      "switch",
+      "for",
+      "defer"
+    ]
   }
 }
